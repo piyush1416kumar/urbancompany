@@ -1,0 +1,662 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#page_layout{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
+}
+#page_container{
+    width: 50vw;
+    margin: auto;
+}
+@font-face {
+    /* font-family: Sauce_Grotesk_Light;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Light.ttf"); */
+    font-family: Sauce_Grotesk;
+    src: url("./Sauce.Grotesk/Sauce\ Grotesk\ Regular.ttf");
+}
+
+i.custom{
+    color: var(--primary_grey);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+#body{
+    display: flex;
+    margin-top: 2rem;
+    font-family: Sauce_Grotesk;
+}
+
+nav{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+}
+
+nav>p{
+    font-size: 1.8rem;
+}
+#packageSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 32px;
+    width: 60vw;
+    /* background-color: azure; */
+}
+#paymentSummary{
+    width: 40vw;
+    /* background-color: aliceblue; */
+}
+.divider{
+    background-color: var(--light_grey);
+    width: 100%;
+    height: 0.8rem;
+    /* border: 1px solid green; */
+    margin: 0.75rem 0 2rem;
+}
+
+#savings{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#savings>img{
+    width:36px;
+    height: 36px;
+}
+#savings>div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#savings>div>p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary_grey);
+}
+
+#savings>div>div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#savings>div>div>span{
+    font-size: 1.2rem;
+    color: var(--purple);
+}
+
+.serviceDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count_price{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.counter{
+    background-color: var(--light_purple);
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--purple);
+    padding: 0.8rem 0.3rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border: 0.01rem solid var(--purple);
+}
+
+.count_price>p{
+    font-size: 1.4rem;
+    color: var(--primary_grey);
+}
+
+.width80{
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.serviceFeatures>li{
+    list-style-type: disc;
+    color: var(--secondary_grey);
+    font-size: 1.2rem;
+}
+
+#extraServices>p{
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--primary_grey);   
+}
+
+#servicesContainer{
+    display: grid;
+    gap:1rem;
+    margin: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.serviceBox{
+    border-radius: 5px;
+    /* padding: 2rem; */
+    border: 1px solid var(--light_grey);
+}
+
+.serviceBox>img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.serviceBox>p:nth-child(2){
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--primary_grey);
+}
+
+.serviceBox>p:nth-child(3){
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--secondary_grey);
+}
+
+.serviceBox>button{
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+hr{
+    height: 1px;
+    background-color: var(--light_purple);
+    margin: 2rem 0;
+    border: none;
+}
+
+#membershipDetails{
+    display: flex;
+    gap:3rem;
+    margin: 2rem 0;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.title_time{
+    width:73%;
+}
+
+.title_time>p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--primary_grey);
+}
+
+.title_time>p:nth-child(2){
+    font-size: 1.4rem;
+}
+
+.membershipPrice>p{
+    font-size: 1.4rem;
+}
+
+.membershipPrice>p:nth-child(2){
+    text-decoration: line-through;
+}
+
+.payDetails>p{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.payDetails>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.payDetails>div>p{
+    font-size: 1.4rem;
+}
+
+#membershipDisCost{
+    color: var(--primary_green);
+}
+
+#strThrMemberCost{
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: var(--secondary_grey);
+}
+
+.membershipCost>div{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.Total>p:first-child{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#savedDiscount{
+    background-color: var(--light_green);
+    justify-content: center;
+    gap:1rem;
+    padding: 1rem;
+}
+
+#savedDiscount>p{
+    font-size: 1.4rem;
+    color: var(--primary_green);
+}
+
+#coupons{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#logo_coupon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#offers{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;    
+}
+
+#offers>p{
+    font-size: 1.4rem;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+#tip{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#tip>p:first-child{
+    font-weight: 600;
+}
+
+#tipAmount{
+    display: flex;
+    gap:2rem;
+}
+
+#tipAmount>button{
+    padding: 0.5rem 2rem;
+    font-family: Sauce_Grotesk;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#tip>p:last-child{
+    font-size: 1.2rem;
+    color: var(--secondary_grey);
+}
+
+
+
+
+
+#CTA{
+    position: fixed;
+    width: 20%;
+    bottom: 0px;
+    background-color: white;
+}
+
+#CTA_btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+#prices{
+    display: flex;
+    gap: 1rem;
+}
+
+#payAmount{
+    font-weight: 700;
+}
+
+#strThrAmount{
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: var(--secondary_grey);
+}
+
+#CTA_btn>button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+#bookSlotOverlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#closebtn{
+    width: 3rem;
+    height: 3rem;
+    z-index: 3;
+    position: absolute;
+    top: 20vh;
+    left: 70vw;
+    background-color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+    /* paading: 2px; */
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+#addressContainer{
+    position: absolute;
+    width: 45vw;
+    height: 30vw;
+    background-color: white;
+    top: 25%;
+    left: 27%;
+    z-index: 2;
+    border-radius: 20px;
+    display: flex;
+    /* gap: 2rem; */
+    /* justify-content: space-between; */
+}
+
+#slotContainer{
+    position: absolute;
+    width: 45vw;
+    height: 30vw;
+    background-color: white;
+    top: 25%;
+    left: 27%;
+    z-index: 2;
+    border-radius: 20px;
+    flex-direction: column;
+    font-family: Sauce_Grotesk;
+}
+
+#slotContent{
+    border-radius: 20px;
+    position: relative;
+    overflow-y: scroll;
+    width: 45vw;
+    height: 28vw;
+}
+
+#addressDetails{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgb(246, 246, 246); */
+    border-radius:  0 20px 20px 0;
+    font-family: Sauce_Grotesk;
+}
+
+#changeAddress{
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    /* align-items: center; */
+}
+
+#addDetails>p:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#addDetails>p:last-child{
+    font-size: 1.4rem;
+    color: var(--secondary_grey);
+    line-height: 2.5rem;
+}
+
+#changeAddressBtn{
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+    padding: 0rem 2rem;
+    height: 4rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#inputInfo{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#inputInfo>p{
+    font-size: 1.6rem;
+    color:var(--secondary_grey);
+    font-weight: 600;
+}
+
+#inputInfo>input{
+    padding: 2rem;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+#homeBtn,#otherBtn{
+    font-family: Sauce_Grotesk;
+    font-weight: 600;
+    padding: 0rem 2rem;
+    height: 4rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: var(--secondary_grey);
+}
+
+#addressCTA{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(129, 129, 129, 0.25) 0px -5px 15px;
+}
+
+#saveAddress{
+    padding: 2rem;
+    width: 95%;
+}
+
+iframe{
+    /* border-radius: 20px; */
+    border-radius:  20px 0px 0px 20px;
+}
+
+#slotAddress{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#leftAddSlot{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#selectDate{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#selectDate>p:first-child{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#selectDate>p:nth-child(2){
+    color: var(--secondary_grey);
+}
+
+#dateBtns{
+    display: flex;
+    gap: 2rem;
+}
+
+.dateBox{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dateBox>p:nth-child(2){
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#notice{
+    background-color: var(--light_grey);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#notice>p{
+    font-size: 1.4rem;
+    color: var(--primary_grey);
+}
+
+#serviceTime{
+    margin: 2rem;
+}
+
+#serviceTime>p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#timeSlots{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.timeBox{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+#slotCTA{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(129, 129, 129, 0.25) 0px -5px 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+#saveSlot{
+    padding: 2rem;
+    width: 95%;
+}
+
+
+
+
+@media all and (max-width:820px) and (min-width:426px) {
+    #page_container{
+        width: 90vw;
+    }
+    #body{
+        flex-direction: column-reverse;
+    }
+    
+    #packageSection,#paymentSummary{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:425px){
+    
+#page_container {
+    width: 90vw;
+    margin: 1.5rem;
+  }
+  #body {
+    flex-direction: column-reverse;
+  }
+  
+  #packageSection,
+  #paymentSummary {
+    width: 100%;
+  }
+  
+}
+

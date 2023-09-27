@@ -1,0 +1,16 @@
+
+#page_container {
+  width: 90vw;
+  margin: 1.5rem;
+}
+#body {
+  flex-direction: column-reverse;
+}
+
+#plusContainer {
+  grid-template-columns: repeat(2, 1fr);
+}
+#benefitsColumn,
+#planSelectorColumn {
+  width: 100%;
+}
